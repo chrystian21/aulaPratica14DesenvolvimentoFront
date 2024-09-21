@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade Prática</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <header class="bg-primary text-white text-center py-2">
+    <h1>Atividade Prática</h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#inicio">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contato">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container-fluid my-5">
+    <div class="justify-content-center">
+
+      <div class="col justify-content-center" id="inicio">
+        <div class="bg-light container-fluid p-4 mb-4 border rounded text-center">
+          <h2 class="text-center">Início</h2>
+          <p>Essa página foi desenvolvida como atividade prática da matéria de desenvolvimento front-end</p>
+        </div>
+      </div>
+
+      <div class="col" id="sobre">
+        <div class="bg-light p-4 mb-4 border rounded">
+          <h2 class="text-center">Sobre</h2>
+          <p class="text-center">Os requisitos para essa atividade foram os seguintes: <br>
+           
+            1. Comece criando um site básico no seu editor de código. O site deve ter pelo menos uma página (index.html) e utilizar HTML, CSS e Bootstrap. Você é livre para definir o conteúdo e estilo do site. <br>
+
+            2. Após criar o site, crie um novo repositório no GitHub. Nomeie o repositório de acordo com o propósito do seu site (por exemplo, “meu-portfolio”). <br>
+
+            3. No VSCode, adicione o repositório que você acabou de criar como o repositório remoto do seu projeto usando o comando git remote add origin [URL do seu repositório]. <br>
+
+            4. Faça o push do seu projeto para o GitHub usando o comando git push origin main. <br>
+
+            5. Verifique se o seu projeto aparece no repositório no GitHub. <br>
+
+            6. Ative o GitHub Pages para o seu repositório. Vá para Settings > Pages > Source, escolha a branch “main” e clique em “Save”. <br>
+
+            7. Aguarde alguns minutos para o GitHub publicar o seu site. Após a publicação, copie o URL fornecido pelo GitHub e verifique se o site está funcionando corretamente. <br>
+
+            8. Compartilhe o URL do seu site com seus colegas de classe.​</p> <br>
+        </div>
+      </div>
+
+      <div class="col justify-content-center text-center" id="contato">
+        <div class="bg-light p-4 mb-4 border rounded">
+          <h2 class="text-center">Contato</h2>
+          <a class=" bg-warning p-1 rounded text-dark" href="https://github.com/chrystian21" target="_blank">Meu GitHub</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; <span id="ano-atual"></span> Chrystian Carlos. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    document.getElementById('ano-atual').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
